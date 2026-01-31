@@ -1,0 +1,91 @@
+
+start-at-login = true
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+on-focus-changed = "move-mouse window-lazy-center"
+
+[workspace-to-monitor-force-assignment]
+    Q = 'main'
+    W = 'main'
+    E = 'main'
+    R = 'main'
+    1 = ['secondary', 'main']
+    2 = ['secondary', 'main']
+    3 = ['secondary', 'main']
+    4 = ['secondary', 'main']
+    5 = ['secondary', 'main']
+    0 = ['secondary', 'main']
+
+[mode.main.binding]
+    # alt-enter = 'exec-and-forget open -n /Applications/kitty.app'
+    alt-enter = 'exec-and-forget open -n /Applications/alacritty.app'
+
+    alt-h = 'focus --boundaries-action wrap-around-the-workspace left'
+    alt-j = 'focus --boundaries-action wrap-around-the-workspace down'
+    alt-k = 'focus --boundaries-action wrap-around-the-workspace up'
+    alt-l = 'focus --boundaries-action wrap-around-the-workspace right'
+
+    alt-shift-h = 'move left'
+    alt-shift-j = 'move down'
+    alt-shift-k = 'move up'
+    alt-shift-l = 'move right'
+
+    cmd-l = 'join-with right'
+    cmd-j = 'join-with down'
+
+    alt-f = 'fullscreen'
+
+    alt-q = 'workspace Q'
+    alt-w = 'workspace W'
+    alt-e = 'workspace E'
+    alt-r = 'workspace R'
+    alt-1 = 'workspace 1'
+    alt-2 = 'workspace 2'
+    alt-3 = 'workspace 3'
+    alt-4 = 'workspace 4'
+    alt-5 = 'workspace 5'
+    alt-0 = 'workspace 0'
+
+    alt-shift-q = 'move-node-to-workspace Q'
+    alt-shift-w = 'move-node-to-workspace W'
+    alt-shift-e = 'move-node-to-workspace E'
+    alt-shift-r = 'move-node-to-workspace R'
+    alt-shift-1 = 'move-node-to-workspace 1'
+    alt-shift-2 = 'move-node-to-workspace 2'
+    alt-shift-3 = 'move-node-to-workspace 3'
+    alt-shift-4 = 'move-node-to-workspace 4'
+    alt-shift-5 = 'move-node-to-workspace 5'
+    alt-shift-0 = 'move-node-to-workspace 0'
+
+    alt-shift-c = 'reload-config'
+
+    alt-n = "workspace new"
+    alt-d = "workspace destroy"
+
+[[on-window-detected]]
+    if.app-id = 'com.google.Chrome'
+    run = "move-node-to-workspace 1"
+
+[[on-window-detected]]
+    if.app-id = 'com.openai.chat'
+    run = "move-node-to-workspace 2"
+
+[[on-window-detected]]
+    if.app-id = 'com.electron.dockerdesktop'
+    run = "move-node-to-workspace 3"
+
+[[on-window-detected]]
+    if.app-id = 'net.kovidgoyal.kitty'
+    run = "move-node-to-workspace Q"
+
+[[on-window-detected]]
+    if.app-id = 'ru.keepcoder.Telegram'
+    run = "move-node-to-workspace E"
+
+[[on-window-detected]]
+    if.app-id = 'com.tinyspeck.slackmacgap'
+    run = "move-node-to-workspace E"
+
+[[on-window-detected]]
+    if.app-id = 'notion.id'
+    run = "move-node-to-workspace R"
+

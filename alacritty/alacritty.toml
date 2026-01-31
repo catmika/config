@@ -1,0 +1,59 @@
+[colors.primary]
+background = "0x0a0a0a"
+foreground = "0xe6e6e6"
+
+[colors.normal]
+black   = "0x0a0a0a"
+red     = "0xe04a4a"
+green   = "0x5ccf72"
+yellow  = "0xe4d56a"
+blue    = "0x4a6be0"
+magenta = "0xc66be0"
+cyan    = "0x5cd6d6"
+white   = "0xe6e6e6"
+
+[colors.bright]
+black   = "0x555555"
+red     = "0xff5555"
+green   = "0x55ff55"
+yellow  = "0xffff55"
+blue    = "0x5555ff"
+magenta = "0xff55ff"
+cyan    = "0x55ffff"
+white   = "0xffffff"
+
+[font]
+size = 14.0
+
+[font.normal]
+# family = "FiraCode Nerd Font Mono"
+family = "GohuFont 14 Nerd Font"
+style = "Regular"
+
+[font.bold]
+# family = "FiraCode Nerd Font Mono"
+family = "GohuFont 14 Nerd Font"
+style = "Bold"
+
+[cursor]
+[cursor.style]
+shape = "Block"
+
+[window]
+opacity = 0.97
+
+[window.padding]
+x = 4
+y = 4
+
+[selection]
+save_to_clipboard = true
+
+[scrolling]
+history = 1000
+
+[keyboard]
+bindings = [
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left",  mods = "Alt", chars = "\u001BB" },
+]
